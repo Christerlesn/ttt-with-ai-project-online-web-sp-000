@@ -15,7 +15,7 @@ module Players
         board.position(1) == board.position(9) ||
         board.position(3) == board.position(7)
         move = "2"
-      elsif board.turn_count >= 4
+      elsif board.turn_count >= 3
       move = [1,2,3,4,5,6,7,8,9].detect{|i| !board.taken?(i)}.to_s
     end
 
